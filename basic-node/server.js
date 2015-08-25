@@ -25,6 +25,11 @@ express()
         res.json(data)
       })
       .once('error', console.log)
+
+    req.once('close', function() {
+      // Close internal object when user aborts request.
+      lpServer.close(req.body.client)
+    })
   })
   .listen(3000)
 

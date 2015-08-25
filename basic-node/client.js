@@ -35,8 +35,13 @@ let recipient = document.querySelector('#recipient')
 
 document.querySelector('#connect').addEventListener('submit', function(e) {
   e.preventDefault()
-  if (client) client.destroy()
+  if (client) client.disconnect()
   client = create(user.value)
+})
+
+document.querySelector('#disconnect').addEventListener('click', function(e) {
+  e.preventDefault()
+  client.disconnect()
 })
 
 document.querySelector('#send').addEventListener('submit', function(e) {
