@@ -7,23 +7,23 @@ function create(user) {
     url: 'http://localhost:3000/lpio'
   })
 
-  client.on('connected', () => {
+  let channel = client.connect()
+
+  channel.on('connected', () => {
     console.log('connected')
   })
-  client.on('disconnected', () => {
+  channel.on('disconnected', () => {
     console.log('disconnected')
   })
-  client.on('error', err => {
+  channel.on('error', err => {
     console.log('error', err)
   })
-  client.on('message', message => {
+  channel.on('message', message => {
     console.log('message', message)
   })
-  client.on('data', data => {
+  channel.on('data', data => {
     console.log('data', data)
   })
-
-  client.connect()
 
   return client
 }
