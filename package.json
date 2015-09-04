@@ -2,7 +2,7 @@
   "name": "lpio-examples",
   "version": "0.1.0",
   "description": "Examples for LPIO",
-  "repository": "https://github.com/lpio/examples.git",
+  "repository": "https://github.com/lpio/lpio-examples.git",
   "devDependencies": {
     "babel": "^5.6.14",
     "babel-core": "^5.6.20",
@@ -11,8 +11,8 @@
     "body-parser": "^1.13.3",
     "commander": "^2.8.1",
     "express": "^4.13.3",
-    "lpio-client-js": "^0.1.0",
-    "lpio-server-node": "^0.1.0",
+    "lpio-client": "^0.1.0",
+    "lpio-server": "^0.1.0",
     "promptly": "^0.2.1",
     "webpack": "^1.11.0",
     "webpack-dev-server": "^1.10.1"

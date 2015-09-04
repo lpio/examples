@@ -1,4 +1,4 @@
-import Client from 'lpio-client-js'
+import Client from 'lpio-client'
 
 function create(user) {
   let client = new Client({

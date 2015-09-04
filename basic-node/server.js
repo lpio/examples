@@ -1,6 +1,6 @@
 var express = require('express')
 var bodyParser = require('body-parser')
-var LpServer = require('lpio-server-node')
+var LpServer = require('lpio-server')
 var promptly = require('promptly')
 
 var lpServer = new LpServer()
